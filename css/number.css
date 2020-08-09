@@ -1,0 +1,59 @@
+
+.stats-row {
+    overflow: auto;
+  }
+  .stats-col {
+    float: left;
+    width: 25%;
+    text-align: center;
+    height: 100%;
+    padding: 50px 0px;
+  }
+  .stats-col:nth-child(even) {
+    background: #7c6806;
+  }
+  .stats-col:nth-child(odd) {
+    background: #d3b002;
+  }
+  .stats-col i {
+    font-size: 50px;
+    color: #fff;
+  }
+  .stats-col h1 {
+    font-size: 40px;
+    padding: 0;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'Open Sans';
+  }
+  .stats-col span {
+    width: 60px;
+    background: #fff;
+    height: 2px;
+    display: block;
+    margin: 0 auto;
+  }
+  .stats-col p {
+    color: #fff;
+    font-size: 18px;
+    margin: 0;
+    padding: 10px;
+    font-family: 'Open Sans';
+  }
+
+  .stats-counter-value::after{
+      content: "+";
+  }
+
+  .CR::after{
+      content: " CR+";
+  }
+  
+
+
+  @media (max-width: 786px) {
+    .stats-col {width: 50%;}
+  }
+  @media (max-width: 500px) {
+    .stats-col {width: 100%;}
+  }
